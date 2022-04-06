@@ -61,7 +61,7 @@ class ConnectScreen extends StatelessWidget {
                             type: TextInputType.text,
                             validator: (value) {
                               if (value.isEmpty) {
-                                cubit.isArabic? 'من فضلك ادخل الاسم' : 'Please enter the name';
+                             return   cubit.isArabic? 'من فضلك ادخل الاسم' : 'Please enter the name';
                               }
                             }),
                         SizedBox(
@@ -73,7 +73,7 @@ class ConnectScreen extends StatelessWidget {
                             type: TextInputType.phone,
                             validator: (value) {
                               if (value.isEmpty) {
-                                cubit.isArabic? 'من فضلك ادخل الجوال' : ' Please enter the phone';
+                              return  cubit.isArabic? 'من فضلك ادخل الجوال' : ' Please enter the phone';
                               }
                             }),
                         SizedBox(
@@ -85,7 +85,7 @@ class ConnectScreen extends StatelessWidget {
                             type: TextInputType.emailAddress,
                             validator: (value) {
                               if (value.isEmpty) {
-                                cubit.isArabic? 'من فضلك ادخل البرد الالكتروني' : 'Please enter Email Address';
+                             return   cubit.isArabic? 'من فضلك ادخل البرد الالكتروني' : 'Please enter Email Address';
                               }
                             }),
                         SizedBox(
@@ -94,7 +94,7 @@ class ConnectScreen extends StatelessWidget {
                         TextFormField(
                           validator: (value) {
                             if (value!.isEmpty) {
-                              cubit.isArabic?  'من فضلك ادخل رسالتك': 'Please enter your message';
+                            return  cubit.isArabic?  'من فضلك ادخل رسالتك': 'Please enter your message';
                             }
                           },
                           keyboardType: TextInputType.text,
